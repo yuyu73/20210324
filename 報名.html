@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--navbar功能選單-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color: rgba(141, 96, 85, 0.733);height: 80px;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">꧁YC彩妝學苑꧂</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--如果mr改ml 靠左對齊改靠右對齊-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">首頁 Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="環境.html">環境設備 Enviroment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="教師.html">師資介紹 Tutors</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        課程介紹 Courses
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="美妝.html">美妝 Make up</a>
+                        <a class="dropdown-item" href="美甲.html">美甲 Manicure</a>
+                        <a class="dropdown-item" href="美髮.html">美髮 Hairdressing</a>
+                        <a class="dropdown-item" href="造型.html">整體造型 Styling</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="證照班.html">專業證照保證班</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="報名.html">我要報名</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h1 class="text-center">Y C 彩 妝 班 報 名 表</h1>
+
+    <div style="width: 750px;height: 600px;" class="rounded mx-auto d-block">
+    <div class=" m-1 p-2" style="background: rgba(243, 237, 236, 0.993)">
+
+     <!--class是bootsraop style是CSS-->
+     <div class="m-5" style="margin:30px">
+        <!--可以看到使用者送出的東西-->
+        <form action="check.php" method="POST">
+            <!--b4-form-->
+            <!--性別選擇-->
+            <!--分列分行多個選項--> <!--name相同才能單選-->
+            <!--報名班別-->
+            <div class="form-group">
+                <label for="">報名課程</label>
+                <select class="form-control" name="degree" id="">
+                  <option>專業證照保證班(4/12開始上課)</option>
+                  <option>韓系美妝班</option>
+                  <option>歐美美妝班</option>
+                  <option>男士妝容班</option>
+                  <option>藝術美甲班</option>
+                  <option>整體造型美學班</option>
+                  <option>髮型設計班</option>
+                  <option>男士理髮班</option>
+                </select>
+            </div>
+            <br>
+            <h6>性別</h6>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="checkedValue" checked>
+                    男性
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="checkedValue" checked>
+                    女性
+                </label>
+            </div>
+            <br>
+            <!--名字--form-group-->
+            <div class="form-group">
+                <label for="">姓名</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="請輸入姓名">
+            </div>
+            <br>
+            <!--日期-->
+            <div class="form-group">
+                <label for="">生日</label>
+                <input type="date" name="date" id="date" class="form-control" placeholder="請輸入生日日期">
+            </div>
+            <br>
+            <!--手機號碼--form-group-->
+            <div class="form-group">
+                <label for="">手機號碼</label>
+                <input type="text" name="number" id="number" class="form-control" placeholder="請輸入學號">
+            </div>          
+            <br>
+            <!--輸入班級--form-group-->
+            <div class="form-group">
+                <label for="">聯絡地址</label>
+                <input type="text" name="class" id="class" class="form-control" placeholder="請輸入班級">
+            </div>  
+            <br>
+            <!--職業--form-group-->
+            <div class="form-group">
+                <label for="">目前職業</label>
+                <select class="form-control" name="degree" id="">
+                    <option>待業</option>
+                    <option>學生</option>
+                    <option>政府機關</option>
+                    <option>軍警</option>
+                    <option>教育研究</option>
+                    <option>經商</option>
+                    <option>建築營造</option>
+                    <option>金融保險</option>
+                    <option>製造/供應商</option>
+                    <option>房地產</option>
+                    <option>資訊</option>
+                    <option>服務</option>
+                    <option>農漁牧</option>
+                    <option>家管</option>
+                    <option>醫療</option>
+                    <option>法律</option>
+                    <option>零售/流通</option>
+                    <option>交通/運輸</option>
+                    <option>旅遊</option>
+                    <option>娛樂</option>
+                    <option>出版</option>
+                    <option>傳媒</option>
+                    <option>行銷</option>
+                    <option>藝術</option>
+                    <option>Youtuber</option>
+                    <option>部落客</option>
+                    <option>其他</option>
+                    <option>待業中</option>
+                </select>
+            </div>      
+            <br>
+            <!--付款方式-->
+            <div class="form-group">
+                <label for="">付款方式</label>
+                <select class="form-control" name="degree" id="">
+                  <option>匯款</option>
+                  <option>網路ATM</option>
+                  <option>現金付款</option>
+                  <option>信用卡付砍</option>
+                  <option>分期付款</option>
+                </select>
+            </div>
+            <br>
+            <!--留言板-->
+            <div class="form-group">
+                <label for="">注意事項</label>
+                <textarea class="form-control" name="msg" id="msg" rows="4"></textarea>
+            </div>
+            <br>
+
+            <!--休閒選擇-->
+            <!--同一列多個選項--> <!--邊界的語法[ml-2]-->
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 訂閱YC彩妝最新消息
+                </label>
+                <label class="form-check-label ml-5">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 同意服務款項
+                </label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" style="color: rgb(255, 255, 255); background-color: rgba(141, 96, 85, 0.733);" 
+            data-toggle="modal" data-target="#exampleModal">送出</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                    <div class="modal-body">確定嗎？ 送出後就不能再更改了！</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">返回</button>
+                            <input type="button" class="btn btn-primary" value="確認" onclick="location.href='送出.html'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!--submit將資料傳送到後端-->
+            
+        </form>
+         </div>
+        </div>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
